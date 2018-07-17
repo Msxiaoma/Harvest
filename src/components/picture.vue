@@ -18,22 +18,11 @@
         },
         data() {
             return {
-                leftIndex: 5,
                 currrentIndex: 1,
-                rightIndex:1,
                 moveX: 0,
                 moveY: 0,
                 endX: 0,
-                endY: 0,
-                pictureStyle: ''
-            }
-        },
-        mounted() {
-            
-        },
-        computed: {
-            changeArr() {
-                return this.imgArr
+                endY: 0
             }
         },
         watch: {
@@ -59,12 +48,10 @@
                 if (this.endX > 40) {
                     console.log('右滑')
                     this.currrentIndex--
-                    this.pictureStyle =  ''
                 } 
                 if(this.endX < -40) {
                     console.log('左滑')
                     this.currrentIndex++
-                    this.pictureStyle =  'animated fadeInRight'
                 }
             }
         }
@@ -89,9 +76,6 @@
         background: burlywood;
         display: inline-block;
         border-radius: 0.2rem;
-        animation: fade-in;/*动画名称*/  
-        animation-duration: 1.5s;/*动画持续时间*/  
-        -webkit-animation:fade-in 1.5s;/*针对webkit内核*/  
     }
     
     .box-left-img {
