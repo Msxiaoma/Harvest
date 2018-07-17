@@ -9,10 +9,6 @@
 
 <script>
     export default {
-        created() {
-            // 适配移动设备
-           
-        },
         props: {
             imgArr: Array
         },
@@ -20,9 +16,7 @@
             return {
                 currrentIndex: 1,
                 moveX: 0,
-                moveY: 0,
-                endX: 0,
-                endY: 0
+                endX: 0
             }
         },
         watch: {
@@ -38,11 +32,9 @@
         methods: {
             touchStart(e) {
                 this.moveX = e.targetTouches[0].pageX
-                this.moveY = e.targetTouches[0].clientHeight
             },
             touchMove(e) {
                  this.endX = e.targetTouches[0].pageX - this.moveX
-                 this.endY = e.target.clientWidth - this.moveY
             },
             touchEnd() {
                 if (this.endX > 40) {
