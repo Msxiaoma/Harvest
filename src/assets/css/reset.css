@@ -9,3 +9,6 @@ body,ul,div,p,li,h6{
     font-weight: bold;
     padding: .4rem;
 }
+.change-router{
+    font-size: .3rem;
+}
