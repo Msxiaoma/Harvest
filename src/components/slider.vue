@@ -138,7 +138,7 @@
     .picture-index {
         margin: 0 auto;
         display: block;
-        width: 1.2rem;
+        width: 1.3rem;
     }
    .picture-index li {
         float: left;
