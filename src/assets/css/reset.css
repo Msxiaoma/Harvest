@@ -1,5 +1,11 @@
-body,ul,div,p{
+body,ul,div,p,li,h6{
     padding: 0rem;
     margin: 0rem;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+.component-intro{
+    text-align: center;
+    font-size: .4rem;
+    font-weight: bold;
+    padding: .4rem;
 }
