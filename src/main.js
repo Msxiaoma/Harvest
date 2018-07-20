@@ -5,13 +5,15 @@ import App from './App'
 import router from './router'
 import '../src/assets/css/reset.css'
 import '../src/assets/css/animate.css'
-
+import store from '../src/store/store'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store, 
   components: { App },
   template: '<App/>'
 })
+
